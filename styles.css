@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
 
 :root {
@@ -15,12 +16,9 @@
   --shadow-lg: 0 12px 48px rgba(31,78,121,0.16);
   --radius: 10px;
   --transition: all 0.28s cubic-bezier(0.4,0,0.2,1);
-  html, body {
-  max-width: 100%;
-  overflow-x: hidden;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; max-width: 100%; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
