@@ -506,8 +506,8 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
-  .hero-content { grid-template-columns: 1fr; gap: 2.5rem; }
-  .services-grid { grid-template-columns: 1fr 1fr; }
+  .hero-content { padding: 3rem 1.5rem 5rem; }
+  .services-grid { grid-template-columns: 1fr 1fr !important; }
   .why-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
@@ -515,13 +515,22 @@ footer {
   .credentials-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .privacy-doc { padding: 2rem 1.5rem; }
+  section { padding: 3.5rem 1.5rem; }
 }
 @media (max-width: 640px) {
-  .nav-links { display: none; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--mid-grey); padding: 1.5rem 2rem; gap: 1rem; box-shadow: var(--shadow); }
+  .nav-links { display: none; flex-direction: column; position: absolute; top: 72px; left: 0; right: 0; background: var(--white); border-bottom: 1px solid var(--mid-grey); padding: 1.5rem 2rem; gap: 1rem; box-shadow: var(--shadow); z-index: 999; }
   .nav-links.open { display: flex; }
   .hamburger { display: flex; }
-  .services-grid { grid-template-columns: 1fr; }
+  .services-grid { grid-template-columns: 1fr !important; }
   .form-row { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .footer-bottom { flex-direction: column; text-align: center; }
+  .contact-form { padding: 1.5rem; }
+  .packages-hero, .about-hero, .privacy-hero { padding: 5rem 1.5rem 3rem; }
+  .hero { min-height: 45vh; }
+  .hero h1 { font-size: 1.7rem; }
+  section { padding: 3rem 1.25rem; }
+  .why-image-inner { padding: 2rem 1.5rem; }
+  .privacy-doc { padding: 1.5rem 1.25rem; }
+  .about-grid { gap: 2rem; }
 }
