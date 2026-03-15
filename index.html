@@ -168,32 +168,33 @@
             <span>West Cumbria, UK</span>
           </div>
         </div>
-        <div class="contact-form">
-          <h3 style="color:var(--navy); font-size:1.1rem; font-weight:700; margin-bottom:1.5rem;">Send a message</h3>
-          <div class="form-row">
-            <div class="form-group"><label>First Name</label><input type="text" placeholder="Your first name" /></div>
-            <div class="form-group"><label>Last Name</label><input type="text" placeholder="Your last name" /></div>
-          </div>
-          <div class="form-group"><label>Business Name</label><input type="text" placeholder="Your company name" /></div>
-          <div class="form-group"><label>Email Address</label><input type="email" placeholder="your@email.com" /></div>
-          <div class="form-group">
-            <label>How can West Lakes HSE help?</label>
-            <select>
-              <option value="">Select a topic...</option>
-              <option>HSE Audit</option>
-              <option>Risk Assessment</option>
-              <option>Policy &amp; Documentation</option>
-              <option>Fire Risk Assessment</option>
-              <option>SSIP Application</option>
-              <option>Incident Investigation</option>
-              <option>Retained Support Package</option>
-              <option>General Enquiry</option>
-            </select>
-          </div>
-          <div class="form-group"><label>Message</label><textarea placeholder="Tell West Lakes HSE a bit about your business and what you need..."></textarea></div>
-          <button class="btn-blue form-submit">Send Message</button>
-        </div>
-      </div>
+<div class="contact-form">
+  <h3 style="color:var(--navy); font-size:1.1rem; font-weight:700; margin-bottom:1.5rem;">Send a message</h3>
+  <form action="https://formspree.io/f/xqeydyzw" method="POST">
+    <div class="form-row">
+      <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="Your first name" required /></div>
+      <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Your last name" required /></div>
+    </div>
+    <div class="form-group"><label>Business Name</label><input type="text" name="business_name" placeholder="Your company name" /></div>
+    <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="your@email.com" required /></div>
+    <div class="form-group">
+      <label>How can West Lakes HSE help?</label>
+      <select name="enquiry_type">
+        <option value="">Select a topic...</option>
+        <option>HSE Audit</option>
+        <option>Risk Assessment</option>
+        <option>Policy &amp; Documentation</option>
+        <option>Fire Risk Assessment</option>
+        <option>SSIP Application</option>
+        <option>Incident Investigation</option>
+        <option>Retained Support Package</option>
+        <option>General Enquiry</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Message</label><textarea name="message" placeholder="Tell West Lakes HSE a bit about your business and what you need..." required></textarea></div>
+    <button type="submit" class="btn-blue form-submit">Send Message</button>
+  </form>
+</div>
     </div>
   </section>
 
